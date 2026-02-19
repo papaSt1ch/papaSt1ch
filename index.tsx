@@ -1,15 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
-}
+# MotoEngine Pro - Локальная версия
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+Профессиональный справочник китайских моторов.
+
+## Быстрый старт
+
+1. Установите зависимости:
+   ```bash
+   npm install
+   ```
+
+2. Скопируйте `.env.example` в `.env` и вставьте свой ключ API Gemini.
+
+3. Запустите в режиме разработки:
+   ```bash
+   npm run dev
+   ```
+
+## Команды
+- `npm run dev` - запуск сервера на localhost:3000
+- `npm run build` - сборка проекта для продакшена
+- `npm run preview` - предпросмотр собранного проекта

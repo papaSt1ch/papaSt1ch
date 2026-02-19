@@ -1,8 +1,22 @@
-{
-  "name": "MotoEngine Pro",
-  "description": "Native Android 16 experience for Chinese Engine database.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
-}
+# 🚀 Деплой MotoEngine Pro — 3 шага
+
+## Шаг 1 — Получи API ключ (бесплатно)
+1. Зайди на: https://aistudio.google.com/apikey
+2. Нажми "Create API key"
+3. Скопируй ключ
+
+## Шаг 2 — Задеплой на Netlify
+1. Зайди на: https://app.netlify.com/start
+2. Нажми "Deploy with GitHub"
+3. Выбери репозиторий papaSt1ch
+4. Настройки (уже прописаны в netlify.toml, менять не нужно!)
+5. Перед деплоем: раскрой "Advanced" → "New variable"
+   - Key: VITE_API_KEY
+   - Value: (вставь ключ из шага 1)
+6. Нажми "Deploy site"
+
+## Шаг 3 — Получи APK
+1. Зайди на: https://pwabuilder.com
+2. Вставь URL сайта (вида https://что-то.netlify.app)
+3. Нажми "Package for stores" → Android → Download
+4. Установи APK на телефон!
